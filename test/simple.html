@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>Simple js-tablator test</title>
+  <script type="text/javascript" src="../tablator.js"></script>
+
+  <script type="text/javascript">
+    function main() {
+
+      var table_ = new tq84.tablator();
+
+      table_.addRow('foo', 'bar', 'baz'  );
+      table_.addRow('one', 'two', 'three');
+      table_.addRow(   1 ,    2 ,      3 );
+      
+      table_.toBody();
+    }
+  </script>
+
+</head>
+<body onload='main();'>
+
+</body>
+</html>
